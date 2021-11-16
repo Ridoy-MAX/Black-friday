@@ -774,6 +774,8 @@ transform: translateY(-10px);
   #service{
     background: linear-gradient(
         75deg, #2b2dbd, #e80012) !important;
+        margin-top: 50px;
+        margin-bottom: 50px;
   }
 #service .container .details {
     
@@ -858,6 +860,15 @@ Review
     font-family: var(--ff1);
     padding: 0 10px;
 }
+#review .container .slider .banner-item ul {
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: center;
+    color: var(--brand);
+ 
+
+}
 #review .container .slider .next-arrow {
     position: absolute;
     bottom: -30px;
@@ -886,4 +897,19 @@ Review
  /*==========
 Review
   ==============*/
- 
+ .footer-1 {
+     padding-top: 30px;
+     padding-bottom: 30px;
+    background: linear-gradient(
+        75deg, #2b2dbd, #e80012) !important;
+        color: rgba(255, 255, 255, 0.452);
+ }
+ .footer-1 ul{
+     margin-left: 0;
+     padding-left: 0;
+ }
+ .footer-1 ul li a{
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.452);
+     font-size: 12px;
+ }
