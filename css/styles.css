@@ -118,7 +118,7 @@ variable css start
       flex-direction: column;
       align-items: center;
       color: white;
-
+     margin-top: 110px;
   }
   #banner .container .details h1{
       margin-top: 30px;
@@ -141,7 +141,7 @@ variable css start
       background-color: #ff4a59e7;
   }
 
-
+/* 
   #banner .container .discount .hosting{
       margin-top: 70px;
     display: flex;
@@ -184,7 +184,7 @@ variable css start
        0px 7px 13px -3px, rgba(0, 0, 0, 0.2)
         0px -3px 0px inset;
         
-  }
+  } */
       /*==========
    BANNER end
   ==============*/
