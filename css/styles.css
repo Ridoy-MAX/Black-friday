@@ -264,6 +264,27 @@ variable css start
      
       
   }
+  #order-details .container  .details .learn{
+    position: relative;
+    font-family: var(--ff1);
+    font-size: 14px;
+    font-weight: 500;
+    padding:  10px 15px; 
+    line-height: 1.75em;
+    color: rgb(204, 33, 33);
+    border: 1px solid #de4644;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  #order-details .container  .details .learn:hover{
+      background-color: #FF4A58;
+      border: #FF4A58;
+      color: #ffffff;
+  }
+ 
 
   #order-details .container  .detail2 {
       text-align: center;
@@ -279,8 +300,8 @@ variable css start
    70% discount
   ==============*/
   #hosting70{
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
+    /* background: linear-gradient(
+        75deg, #2b2dbd, #e80012) !important; */
         padding-top: 60px;
         padding-bottom: 60px;
   }
@@ -296,7 +317,10 @@ variable css start
   #hosting70 .container .heading h1{
     font-size: 25px;
     font-weight: bolder;
-    line-height: 35px;
+    line-height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 8px;
+    margin-bottom: 30px;
   }
 
   #hosting70 .container .pricing .price{
@@ -307,6 +331,7 @@ variable css start
       padding-bottom: 25px;
       transition: 0.4s;
       margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   #hosting70 .container .pricing .price:hover{
       transform: translateY(-10px);
@@ -386,8 +411,8 @@ variable css start
    60% discount
   ==============*/
   #hosting60{
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
+    /* background: linear-gradient(
+        75deg, #2b2dbd, #e80012) !important; */
         padding-top: 60px;
         padding-bottom: 60px;
   }
@@ -403,7 +428,10 @@ variable css start
   #hosting60 .container .heading h1{
     font-size: 25px;
     font-weight: bolder;
-    line-height: 35px;
+    line-height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 8px;
+    margin-bottom: 30px;
   }
 
   #hosting60 .container .pricing .price{
@@ -414,6 +442,7 @@ variable css start
       padding-bottom: 25px;
       transition: 0.4s;
       margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   #hosting60 .container .pricing .price:hover{
       transform: translateY(-10px);
@@ -529,8 +558,8 @@ transform: translateY(-10px);
    50% discount
   ==============*/
   #hosting50{
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
+    /* background: linear-gradient(
+        75deg, #2b2dbd, #e80012) !important; */
         padding-top: 60px;
         padding-bottom: 60px;
   }
@@ -546,7 +575,10 @@ transform: translateY(-10px);
   #hosting50 .container .heading h1{
     font-size: 25px;
     font-weight: bolder;
-    line-height: 35px;
+    line-height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 8px;
+    margin-bottom: 30px;
   }
 
   #hosting50 .container .pricing .price{
@@ -557,6 +589,7 @@ transform: translateY(-10px);
       padding-bottom: 25px;
       transition: 0.4s;
       margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   #hosting50 .container .pricing .price:hover{
       transform: translateY(-10px);
@@ -637,8 +670,8 @@ transform: translateY(-10px);
 300% discount
   ==============*/
   #hosting30{
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
+    /* background: linear-gradient(
+        75deg, #2b2dbd, #e80012) !important; */
         padding-top: 60px;
         padding-bottom: 60px;
   }
@@ -652,9 +685,12 @@ transform: translateY(-10px);
 
   }
   #hosting30 .container .heading h1{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bolder;
-    line-height: 35px;
+    line-height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 8px;
+   
   }
 
   #hosting30 .container .pricing .price{
@@ -666,18 +702,19 @@ transform: translateY(-10px);
       transition: 0.4s;
       margin-bottom: 20px;
       margin-left: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       
   }
   #hosting30 .container .pricing .price:hover{
    
   }
   #hosting50 .container .pricing .price h2{
-      font-size: 22px;
+      font-size: 20px;
       font-family: var(--ff1);
       font-weight: normal;
   }
   #hosting30 .container .pricing .price h1{
-      font-size: 37px;
+      font-size: 35px;
       font-family: var(--ff1);
       font-weight: bolder;
       color: #FF4A58;
@@ -738,25 +775,29 @@ transform: translateY(-10px);
 #hosting30 .container .pricing .price ul li i{
     color: #FF4A58;
 }
-#hosting30 .container .pricing .slider .next-arrow {
+#hosting30 .container .pricing .banner-slider{
+
+}
+#hosting30 .container .pricing .banner-slider .next-arrow {
    position: absolute;
+   width: 50px;
    bottom: -30px;
-   left: 57%;
+   left: 39%;
     z-index: 1111111;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 255, 255);
     font-size: 25px;
     padding: 4px 10px;
     transition: 0.3s;
     cursor: pointer;
 }
-#hosting30 .container .pricing .slider .previous-arrow {
+#hosting30 .container .pricing .banner-slider .previous-arrow {
     position: absolute;
     bottom: -30px;
-   
-    right: 56%;
+ width: 50px;
+    right: 35%;
     z-index: 1111111;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 255, 255);
     font-size: 25px;
     padding: 4px 10px;
@@ -832,13 +873,14 @@ transform: translateY(-10px);
  /*==========
 Review
   ==============*/
-#review .container .slider .banner-item{
+/* #review .container .slider .banner-item{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 15px;
     margin-left: 5px;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.05)
+     0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
       border-radius: 7px;
 }
 #review .container .slider .banner-item img{
@@ -893,13 +935,90 @@ Review
      padding: 4px 10px;
      transition: 0.3s;
      cursor: pointer;
+ } */
+
+  /*==========
+Review
+  ==============*/
+  .review-section{
+      margin-bottom: 100px;
+  }
+.review-section h2{
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.review-section .owl-carousel .item .single-review-wrap{
+    border-radius: 7px;
+}
+.review-section .owl-carousel .item .single-review-wrap  .review-body {
+   
+    height: 200px;
+}
+.review-section .owl-carousel .item .single-review-wrap  .review-body h5{
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+   
+}
+.review-section .owl-carousel .item .single-review-wrap  .review-body p{
+    font-size: 14px;
+    font-family: var(--ff2);
+    color: #444444;
+
+}
+.review-section .owl-carousel .item .single-review-wrap .review-author .author-avatar span{
+
+  background-color: #1062fe;
+  width: 32px;
+  height: 32px;
+  font-size: 25px;
+  display: flex;
+ justify-content: center;
+  color: rgb(255, 255, 255);
+  line-height: 60px;
+  border-radius: 100%;
+  font-size: 48px;
+  position: absolute;
+  top: 66%;
+ 
+
+}
+.review-section .owl-carousel .next-arrow {
+    position: absolute;
+    width: 50px;
+    bottom: -30px;
+    left: 39%;
+     z-index: 1111111;
+     color: rgb(0, 0, 0);
+     border: 1px solid rgb(255, 255, 255);
+     font-size: 25px;
+     padding: 4px 10px;
+     transition: 0.3s;
+     cursor: pointer;
  }
+ .review-section .owl-carousel .previous-arrow {
+     position: absolute;
+     bottom: -30px;
+  width: 50px;
+     right: 35%;
+     z-index: 1111111;
+     color: rgb(0, 0, 0);
+     border: 1px solid rgb(255, 255, 255);
+     font-size: 25px;
+     padding: 4px 10px;
+     transition: 0.3s;
+     cursor: pointer;
+ }
+  /*==========
+Review
+  ==============*/
  /*==========
 Review
   ==============*/
  .footer-1 {
      padding-top: 30px;
-     padding-bottom: 30px;
+     padding-bottom: 80px;
     background: linear-gradient(
         75deg, #2b2dbd, #e80012) !important;
         color: rgba(255, 255, 255, 0.452);
@@ -913,3 +1032,85 @@ Review
      color: rgba(255, 255, 255, 0.452);
      font-size: 12px;
  }
+
+
+ /*==========
+timer
+  ==============*/
+  #question{
+      display: flex;
+      justify-content: center;
+        top: 841px;
+        position: fixed;
+      width: 100%;
+      padding-top: 20px;
+    margin-top: 20px;
+    background: linear-gradient(
+        75deg, #2b2dbd, #e80012) !important;
+  }
+  #question .text h2{
+      color: #ffffff;
+      font-size: 25px;
+      line-height: 50px;
+  }
+ #question  .syotimer__body {
+
+    height: 80px;
+     margin: auto;
+   
+    align-items: center;
+}
+#question  .syotimer-cell{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 15px;
+    float: right;
+}
+#question  .syotimer__body  .syotimer-cell__value{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: var(--hfont);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 7px;
+}
+#question  .syotimer__body  .syotimer-cell__unit{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: var(--ff2);
+    font-weight: 600;
+    text-align: center;
+}
+#question .get-link{
+    margin-top: 18px;
+}
+#question .get-link a{
+
+    position: relative;
+    font-family: var(--ff1);
+    font-size: 14px;
+    font-weight: 500;
+    padding:  10px 15px; 
+    line-height: 1.75em;
+    color: rgb(255, 255, 255);
+    border: 1px solid #62208C;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background-color: #62208C;
+    border-radius: 5px;
+    box-shadow: none;
+   
+}
+#question .get-link a:hover{
+    background-color: #7B1A75;
+    border: 1px solid #7B1A75;
+}
+ /*==========
+timer end
+  ==============*/
+
+
+
+
