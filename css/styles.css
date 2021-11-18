@@ -60,10 +60,10 @@ variable css start
     color: rgb(255, 255, 255);
     font-family: var(--ff1);
     font-size: 13px;
-   
+     
   }
   #header-top-bar .container .list-item ul li{
-    line-height: 40px;
+    line-height: 30px;
   }
 
  /*==========
@@ -75,24 +75,25 @@ variable css start
   ==============*/
   .scroll-header {
     background-color: white;
-    box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+    /* box-shadow: 0 0 4px rgba(14, 55, 63, 0.15); */
     width: 100%;
     position: fixed;
     top: -20px;
     z-index: 9999999999999;
   }
   #menu{
-      margin-bottom: 60px;
-      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
   }
   #menu .navbar .navbar-brand img{
       width: 200px !important;
   }
   #menu .collapse .navbar-nav  li a{
-      font-size: 16px;
-      color: black;
-     
-      font-weight: bolder;
+      font-size: 13px;
+      color: rgb(104, 97, 97);
+      font-family: var(--ff1);
+     font-weight: 600;
+      
   }
   #menu .collapse .navbar-nav  li .item{
       width: 90px;
@@ -131,7 +132,7 @@ variable css start
   #banner .container .details h1{
       margin-top: 30px;
   }
-  #banner .container .details .vps .single-pricing-pack-2 .pricing-icon img{
+  /* #banner .container .details .vps .single-pricing-pack-2 .pricing-icon img{
      
   margin-right: 20px;
   }
@@ -161,13 +162,13 @@ color: #f8d3d3;
   }
   #banner .container .details .vps .single-pricing-pack-2 .pricing-price{
      
-  }
+  } */
 
   #banner .container .navbar form{
    margin-top: 20px;
   }
   #banner .container .navbar .form-control{
-      width: 284px;
+      width: 350px;
        height: 50px;
       border-radius: 7px;
       border-top-right-radius:0px ;
@@ -280,7 +281,98 @@ font-weight: bold;
     /*==========
    hosting name start
   ==============*/
+    /*==========
+  Flexible Pricing Plan
+  ==============*/
+  #Flexible-plan {
+      padding-bottom: 100px;
+      padding-top: 100px;
+      background-color: #FAFAFA;
+  }
+#Flexible-plan .container .details h2{
+    font-size: var(--ff1);
+    font-size: 35px;
+}
+#Flexible-plan .container .details p{
+    font-size: var(--ff1);
+    margin-bottom: 70px;
+}
 
+.single-pricing-pack-2{
+    padding: 40px 20px;
+    margin-bottom: 25px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.single-pricing-pack-2:hover{
+    transform: translateY(-10px);
+}
+.single-pricing-pack-2 .see{ 
+    background-color: var(--brand);
+    color: white;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: var(--ff1);
+    font-weight: bold;
+    border-radius: 4px;
+}
+.single-pricing-pack-2 .pricing-price .h2{
+    margin-bottom: 20px;
+}
+/* line 79, src/assets/scss/components/price-section/_price-1.scss */
+.single-pricing-pack-2 .pricing-icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+    margin: 0 auto 32px;
+  }
+  
+  /* line 88, src/assets/scss/components/price-section/_price-1.scss */
+  .single-pricing-pack-2 .package-title {
+    font-weight: 400;
+  }
+  
+  /* line 91, src/assets/scss/components/price-section/_price-1.scss */
+  .single-pricing-pack-2 .pricing-price {
+    position: relative;
+  }
+  
+  /* line 93, src/assets/scss/components/price-section/_price-1.scss */
+  .single-pricing-pack-2 .pricing-price:after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 32px;
+    margin-left: -16px;
+    background: #e80012;
+  }
+  
+  /* line 104, src/assets/scss/components/price-section/_price-1.scss */
+  .single-pricing-pack-2 .pricing-price small {
+    color: #dad8d8;
+  }
+  
+  /* line 107, src/assets/scss/components/price-section/_price-1.scss */
+  .single-pricing-pack-2 .pricing-price .price-cycle {
+    font-weight: 400;
+  }
+
+    /*==========
+  Flexible Pricing Plan
+  ==============*/
        /*==========
    oder Details
   ==============*/
