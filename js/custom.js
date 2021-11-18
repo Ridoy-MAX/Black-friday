@@ -101,6 +101,14 @@ $('.owl-carousel').slick({
   periodUnit: "d",
 });
 
+ $("#periodic-timer_period_day").syotimer({
+  date: new Date(2015, 0, 1, 20),
+  layout: "smhd",
+  periodic: true,
+  periodInterval: 10,
+  periodUnit: "d",
+});
+
 
 
 // mega menu
@@ -110,3 +118,15 @@ $('.js-mega-menu').HSMegaMenu({
   breakpoint: 767.98,
   hideTimeOut: 0
 }); 
+
+
+
+
+
+
+
+
+
+
+
+

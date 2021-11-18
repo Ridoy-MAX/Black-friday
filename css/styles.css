@@ -42,6 +42,10 @@ variable css start
   /*==========
   variable css start
   ==============*/
+ .rain{
+     z-index: -111111111 !important;
+ }
+
 
  /*==========
    #header-top-bar start
@@ -117,8 +121,7 @@ variable css start
   ==============*/
   #banner{
       padding-bottom: 50px;
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
+    background: #0F0F0F;
   }
 
   #banner .container .details {
@@ -129,8 +132,21 @@ variable css start
       color: white;
      margin-top: 45px;
   }
+  #banner .container .details h3{
+      font-size: 70px;
+      font-weight: bolder;
+      margin-top: 60px;
+      color: white;
+      float: right;
+      text-align: center;
+  }
   #banner .container .details h1{
-      margin-top: 138px;
+      float: right;
+      font-size: 100px;
+      font-weight: bolder;
+      font-family: var(--ff1);
+      color: white;
+      text-align: center;
   }
   /* #banner .container .details .vps .single-pricing-pack-2 .pricing-icon img{
      
@@ -186,7 +202,38 @@ color: #f8d3d3;
   #banner .container .navbar .btn:hover{
       background-color: #ff4a59e7;
   }
+  #banner  .syotimer__body {
 
+    height: 80px;
+     margin: auto;
+   
+    align-items: center;
+}
+#banner  .syotimer-cell{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #c53f3f9d;
+    border-radius: 5px;
+    margin-right: 15px;
+    float: right;
+    box-shadow: #c53f3f7c 0px 4px 12px, #3f1919 0px 8px 14px,
+     rgba(17, 17, 26, 0.1) 0px 16px 26px;
+}
+#banner  .syotimer__body  .syotimer-cell__value{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: var(--hfont);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 7px;
+}
+#banner  .syotimer__body  .syotimer-cell__unit{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: var(--ff2);
+    font-weight: 600;
+    text-align: center;
+}
 /* 
   #banner .container .discount .hosting{
       margin-top: 70px;
@@ -237,7 +284,7 @@ color: #f8d3d3;
     /*==========
    hosting name start
   ==============*/
-  #host-name {
+  /* #host-name {
       margin-top: 50px;
       margin-bottom: 100px;
   }
@@ -276,7 +323,7 @@ font-family: var(--ff1);
 #host-name .item p{
 color: #a79c9c;
 font-weight: bold;
-}
+} */
 
     /*==========
    hosting name start
@@ -307,6 +354,17 @@ font-weight: bold;
 
 .single-pricing-pack-2:hover{
     transform: translateY(-10px);
+}
+.single-pricing-pack-2 .pricing-icon{
+    width: 250px !important;
+    margin: 0 !important;
+}
+.single-pricing-pack-2 .pricing-icon h2{
+    font-weight: bolder;
+    
+}
+.single-pricing-pack-2  p{
+    padding: 10px 17px ;
 }
 .single-pricing-pack-2 .see{ 
     background-color: var(--brand);
@@ -376,14 +434,19 @@ font-weight: bold;
        /*==========
    oder Details
   ==============*/
+  #order-details {
+      background-color: black;
+  }
   #order-details .container .details {
       text-align: center;
   }
   #order-details .container .details h1 {
       font-weight: bold;
+      color: white;
   }
   #order-details .container .details p {
       margin-bottom: 50px;
+      color: white;
   }
   #order-details .container .details a {
       font-weight: bolder;
@@ -485,8 +548,9 @@ font-weight: bold;
   #hosting70{
     /* background: linear-gradient(
         75deg, #2b2dbd, #e80012) !important; */
-        padding-top: 60px;
+        
         padding-bottom: 60px;
+        background-color: black;
   }
   #hosting70 .container .heading {
       text-align: center;
@@ -578,7 +642,7 @@ font-weight: bold;
 
 #hosting70 .container .pricing .price ul{
     margin-top: 50px;
-    border-top:1px solid rgba(134, 127, 127, 0.63) ;
+    border-top:1px solid rgba(219, 36, 36, 0.63) ;
 }
 #hosting70 .container .pricing .price ul li{
    padding-bottom: 15px;
@@ -598,6 +662,8 @@ font-weight: bold;
         75deg, #2b2dbd, #e80012) !important; */
         padding-top: 60px;
         padding-bottom: 60px;
+        background-color: #C60217;
+       
   }
   #hosting60 .container .heading {
       text-align: center;
@@ -1225,17 +1291,17 @@ timer
     
       width: 100%;
       padding-top: 20px;
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
+    background: black !important;
         z-index: 9999999999;
         bottom: 0;
+        box-shadow: rgba(214, 17, 3, 0.3) 0px 0px 0px 3px;
   }
   #question .text h2{
-      color: #ffffff;
+      color: #eb3737;
       font-size: 25px;
       line-height: 50px;
   }
- #question  .syotimer__body {
+  #question  .syotimer__body {
 
     height: 80px;
      margin: auto;
@@ -1245,10 +1311,12 @@ timer
 #question  .syotimer-cell{
     width: 70px;
     height: 70px;
-    border: 1px solid #ffffff;
+    border: 1px solid #c53f3f9d;
     border-radius: 5px;
     margin-right: 15px;
     float: right;
+    box-shadow: #c53f3f7c 0px 4px 12px, #3f1919 0px 8px 14px,
+     rgba(17, 17, 26, 0.1) 0px 16px 26px;
 }
 #question  .syotimer__body  .syotimer-cell__value{
     font-size: 20px;
@@ -1280,7 +1348,7 @@ timer
     border: 1px solid #62208C;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
-    background-color: #62208C;
+    background-color: #ee3939;
     border-radius: 5px;
     box-shadow: none;
    
@@ -1327,4 +1395,24 @@ timer end
     bottom: 5rem;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
