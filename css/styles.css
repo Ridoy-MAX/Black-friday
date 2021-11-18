@@ -73,6 +73,14 @@ variable css start
  /*==========
    menu
   ==============*/
+  .scroll-header {
+    background-color: white;
+    box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+    width: 100%;
+    position: fixed;
+    top: -20px;
+    z-index: 9999999999999;
+  }
   #menu{
       margin-bottom: 60px;
       margin-top: 20px;
@@ -116,21 +124,26 @@ variable css start
       display: flex;
       justify-content: center;
       flex-direction: column;
-      align-items: center;
+      
       color: white;
      margin-top: 110px;
   }
   #banner .container .details h1{
       margin-top: 30px;
   }
+  #banner .container .navbar form{
+   margin-top: 20px;
+  }
   #banner .container .navbar .form-control{
-      width: 222px;
-      height: 50px;
+      width: 284px;
+       height: 50px;
       border-radius: 7px;
       border-top-right-radius:0px ;
       border-bottom-right-radius:0px ;
+     
   }
   #banner .container .navbar .btn{
+      height: 50px;
     border-top-left-radius:0px ;
     border-bottom-left-radius:0px ;
     background-color: #FF4A58;
@@ -204,7 +217,7 @@ variable css start
   }
   #order-details .container .details a {
       font-weight: bolder;
-      
+      cursor: pointer;
       margin-top: 150px;
       font-size: 25px;
       padding: 14px 23px; 
@@ -1038,15 +1051,14 @@ Review
 timer
   ==============*/
   #question{
-      display: flex;
-      justify-content: center;
-        top: 841px;
-        position: fixed;
+    position: fixed;
+    
       width: 100%;
       padding-top: 20px;
-    margin-top: 20px;
     background: linear-gradient(
         75deg, #2b2dbd, #e80012) !important;
+        z-index: 9999999999;
+        bottom: 0;
   }
   #question .text h2{
       color: #ffffff;
@@ -1113,4 +1125,36 @@ timer end
 
 
 
+
+
+  /*========== SCROLL UP ==========*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: #de4644;
+    padding: .4rem;
+    display: flex;
+    opacity: .9;
+    z-index: var(--z-tooltip);
+    z-index: 111111111111;
+    transition: .4s;
+    margin-bottom: 120px;
+  }
+  
+  .scrollup:hover {
+    background-color: #e80012;
+    opacity: 1;
+  }
+  
+  .scrollup__icon {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  /* Show scroll */
+  .show-scroll {
+    bottom: 5rem;
+  }
+  
 
