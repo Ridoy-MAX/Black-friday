@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -21,7 +23,46 @@ variable css start
     --ff1: 'Open Sans', sans-serif;
     --ff2: 'Raleway', sans-serif; 
 }
+
+body {
+  padding: 0;
+  margin: 0;
   
+
+
+}
+
+#span {
+padding: 5px 10px !important;
+  
+  display: block;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-family: var(--ff1);
+background-color: rgba(224, 36, 36, 0.849);
+  cursor: pointer;
+  display: show;
+  box-shadow: rgba(0, 0, 0, 0.719) 0px 5px 15px;
+ border-bottom-left-radius: 8px;
+ border-top-right-radius: 8px;
+ -webkit-animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+ animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+}
+@keyframes bounce {
+    0%,20%,50%,80%,to {
+        transform: translateZ(-2px) translateY(3px)
+    }
+
+    40% {
+        transform: rotateY(150deg) translateZ(-2px) translateY(-20px)
+    }
+
+    60% {
+        transform: translateZ(-2px) translateY(-10px)
+    }
+};
+
+
   /*==========
   variable css end
   ==============*/
@@ -431,116 +472,8 @@ font-weight: bold;
     /*==========
   Flexible Pricing Plan
   ==============*/
-       /*==========
-   oder Details
-  ==============*/
-  #order-details {
-      background-color: black;
-  }
-  #order-details .container .details {
-      text-align: center;
-  }
-  #order-details .container .details h1 {
-      font-weight: bold;
-      color: white;
-  }
-  #order-details .container .details p {
-      margin-bottom: 50px;
-      color: white;
-  }
-  #order-details .container .details a {
-      font-weight: bolder;
-      cursor: pointer;
-      margin-top: 150px;
-      font-size: 25px;
-      padding: 14px 23px; 
-      background-color:#FF4A58;
-      color: white;
-     
-      border-radius: 6px;
-      box-shadow: rgba(197, 195, 195, 0.4) 
-      0px 2px 4px, rgba(138, 122, 122, 0.3)
-       0px 7px 13px -3px, rgba(0, 0, 0, 0.2)
-        0px -3px 0px inset;
-  }
 
 
-  #order-details .container .step1 {
-      margin-top: 70px;
-  }
-  #order-details .container .step2 {
-      margin-top: 70px;
-  }
-  #order-details .container .step3 {
-      margin-top: 70px;
-  }
-  #order-details .container .step1 .img img{
-      
-  }
-  #order-details .container .step1 .details h1{
-      margin: auto;
-      width: 250px;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
-     rgba(240, 46, 170, 0.3) 0px 10px, 
-     rgba(240, 46, 170, 0.2) 0px 15px,
-      rgba(240, 46, 170, 0.1) 0px 20px;
-      margin-bottom: 30px;
-     
-      
-  }
-  #order-details .container .step2 .details h1{
-      margin: auto;
-      width: 250px;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
-     rgba(240, 46, 170, 0.3) 0px 10px, 
-     rgba(240, 46, 170, 0.2) 0px 15px,
-      rgba(240, 46, 170, 0.1) 0px 20px;
-      margin-bottom: 30px;
-     
-      
-  }
-  #order-details .container .step3 .details h1{
-      margin: auto;
-      width: 250px;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
-     rgba(240, 46, 170, 0.3) 0px 10px, 
-     rgba(240, 46, 170, 0.2) 0px 15px,
-      rgba(240, 46, 170, 0.1) 0px 20px;
-      margin-bottom: 30px;
-     
-      
-  }
-  #order-details .container  .details .learn{
-    position: relative;
-    font-family: var(--ff1);
-    font-size: 14px;
-    font-weight: 500;
-    padding:  10px 15px; 
-    line-height: 1.75em;
-    color: rgb(204, 33, 33);
-    border: 1px solid #de4644;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-    background-color: transparent;
-    border-radius: 5px;
-    box-shadow: none;
-  }
-  #order-details .container  .details .learn:hover{
-      background-color: #FF4A58;
-      border: #FF4A58;
-      color: #ffffff;
-  }
- 
-
-  #order-details .container  .detail2 {
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 50px;
-  }
-
-  /*==========
-   oder Details
-  ==============*/
 
     /*==========
    70% discount
@@ -573,7 +506,11 @@ font-weight: bold;
   .pricing-new-wrapper .pricing-price .p-icon i {
     color:rgba(255, 0, 0, 0.699) !important;
   }
+  #hosting70 .popular-price:hover{
+     transform: translateY(-10px);
+  }
   #hosting70 .popular-price {
+      transition: 0.4s;
       background-color: black !important;
    color: rgb(240, 238, 238);
    border: 1px solid rgba(255, 71, 71, 0.664) !important;
@@ -703,11 +640,14 @@ font-weight: bold;
   
 
 }
+#hosting60 .popular-price:hover{
+    transform: translateY(-10px);
+ }
 #hosting60 .pricing-new-wrapper .pricing-price .p-icon i {
   color:rgba(0, 0, 0, 0.699) !important;
 }
 #hosting60 .popular-price {
-  
+  transition: 0.4s;
  color: rgb(0, 0, 0);
  border: 1px solid rgba(0, 0, 0, 0.123) !important;
  box-shadow: rgba(0, 0, 0, 0.61) 0px 5px 15px !important;
@@ -739,126 +679,9 @@ font-weight: bold;
    60% discount end
   ==============*/
 
- /*==========
- komdami Hosting 
-  ==============*/
 
-
- /*==========
- komdami Hosting  end
-  ==============*/
-
-
-
-   /*==========
-   50% discount
-  ==============*/
-
-
-    /*==========
-   50% discount end
-  ==============*/
-
-   /*==========
-300% discount
-  ==============*/
-
-    /*==========
-   50% discount end
-  ==============*/
-
-
- /*==========
- Service
-  ==============*/
-
- /*==========
- Service
-  ==============*/
-
-  /*==========
-Review
-  ==============*/
-  /* line 6, src/assets/scss/vendors/owl.carousel.min.css */
-  .owl-carousel .owl-stage {
-    position: relative;
-    -ms-touch-action: pan-Y;
-    touch-action: manipulation;
-    -moz-backface-visibility: hidden;
-  }
-  /* .review-section{
-      margin-bottom: 100px;
-  }
-.review-section h2{
-    font-size: 30px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-.review-section .owl-carousel .item .single-review-wrap{
-    border-radius: 7px;
-}
-.review-section .owl-carousel .item .single-review-wrap  .review-body {
-   
-    height: 200px;
-}
-.review-section .owl-carousel .item .single-review-wrap  .review-body h5{
-    font-weight: bolder;
-    font-size: 22px;
-    color: black;
-    margin-bottom: 10px;
-   
-}
-.review-section .owl-carousel .item .single-review-wrap  .review-body p{
-    font-size: 14px;
-    font-family: var(--ff2);
-    color: #444444;
-
-}
-.review-section .owl-carousel .item .single-review-wrap .review-author .author-avatar span{
-
-  background-color: #1062fe;
-  width: 32px;
-  height: 32px;
-  font-size: 25px;
-  display: flex;
- justify-content: center;
-  color: rgb(255, 255, 255);
-  line-height: 60px;
-  border-radius: 100%;
-  font-size: 48px;
-  position: absolute;
-  top: 66%;
  
 
-}
-.review-section .owl-carousel .next-arrow {
-    position: absolute;
-    width: 50px;
-    bottom: -30px;
-    left: 39%;
-     z-index: 1111111;
-     color: rgb(0, 0, 0);
-     border: 1px solid rgb(255, 255, 255);
-     font-size: 25px;
-     padding: 4px 10px;
-     transition: 0.3s;
-     cursor: pointer;
- }
- .review-section .owl-carousel .previous-arrow {
-     position: absolute;
-     bottom: -30px;
-  width: 50px;
-     right: 35%;
-     z-index: 1111111;
-     color: rgb(0, 0, 0);
-     border: 1px solid rgb(255, 255, 255);
-     font-size: 25px;
-     padding: 4px 10px;
-     transition: 0.3s;
-     cursor: pointer;
- } */
-  /*==========
-Review
-  ==============*/
  /*==========
 Review
   ==============*/

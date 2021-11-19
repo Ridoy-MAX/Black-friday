@@ -62,47 +62,6 @@ window.addEventListener('scroll', scrollUp)
 
 
 
-
-
-
-
-$('.owl-carousel').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  prevArrow:'<i class="fas fa-chevron-right  previous-arrow"></i>',
-  nextArrow:'<i class="fas fa-chevron-left  next-arrow"></i>',
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-    
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-   
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-
-
-
-
  /* Periodic Timer. Period is equal 10 days */
  $("#periodic-timer_period_days").syotimer({
   date: new Date(2015, 0, 1, 20),
@@ -121,14 +80,15 @@ $('.owl-carousel').slick({
 });
 
 
+//about-counter;
 
-// mega menu
-$('.js-mega-menu').HSMegaMenu({
-  event: 'hover',
-  pageContainer: $('.container'),
-  breakpoint: 767.98,
-  hideTimeOut: 0
-}); 
+$('.counter').counterUp({
+  delay: 10,
+  time: 2000
+});
+
+
+
 
 
 
