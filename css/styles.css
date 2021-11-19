@@ -546,110 +546,132 @@ font-weight: bold;
    70% discount
   ==============*/
   #hosting70{
+      color: white;
+    background: #000000;
+    
     /* background: linear-gradient(
         75deg, #2b2dbd, #e80012) !important; */
         
         padding-bottom: 60px;
-        background-color: black;
+        /* background-color: black; */
   }
-  #hosting70 .container .heading {
-      text-align: center;
-      background-color: white;
-       width: 70%;
-      border-radius: 8px;
-      margin: auto;
-      margin-bottom: 35px;
+  #hosting70 i{
+      color: #000;
 
   }
-  #hosting70 .container .heading h1{
-    font-size: 25px;
-    font-weight: bolder;
-    line-height: 55px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-  }
-
-  #hosting70 .container .pricing .price{
-      color: rgb(0, 0, 0);
-      border-radius: 8px;
-      background-color: white;
-      text-align: center;
-      padding-bottom: 25px;
-      transition: 0.4s;
-      margin-bottom: 20px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  #hosting70 .container .pricing .price:hover{
-      transform: translateY(-10px);
-  }
-  #hosting70 .container .pricing .price h2{
-      font-size: 22px;
-      font-family: var(--ff1);
-      font-weight: normal;
-  }
-  #hosting70 .container .pricing .price h1{
-      font-size: 37px;
-      font-family: var(--ff1);
-      font-weight: bolder;
-      color: #FF4A58;
-      margin-top: 15px;
-  }
-  #hosting70 .container .pricing .price h1 span{
-      font-size: 22px;
-  }
-  #hosting70 .container .pricing .price h3{
-      font-size: 12px;
-      color: rgb(124, 121, 121);
-  }
-  #hosting70 .container .pricing .price h3 span{
-    font-size: 15px;
-    font-family: var(--ff1);
-    font-weight: bolder;
-    color: #FF4A58;
-  }
-
-  #hosting70 .container .pricing .price h4{
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-family: var(--ff1);
-    margin-bottom: 15px;
-
-}
-  #hosting70 .container .pricing .price h4 span {
-    font-size: 17px;
-    color: #FF4A58;
-    font-weight: bolder;
-    font-family: var(--ff1);
-
-}
-
-#hosting70 .container .pricing .price a{
-    cursor: pointer;
-    margin-top: 80px;
-    font-size: 13px;
-    padding: 14px 23px; 
-    background-color:#FF4A58;
-    color: white;
+/* line 716, src/assets/scss/components/price-section/_price-1.scss */
+.pricing-new-wrapper .pricing-price .p-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 40px;
+    color:rgba(255, 0, 0, 0.699) !important;
     
-    border-radius: 6px;
-    box-shadow: rgba(197, 195, 195, 0.4) 
-    0px 2px 4px, rgba(138, 122, 122, 0.3)
-     0px 7px 13px -3px, rgba(0, 0, 0, 0.2)
-      0px -3px 0px inset;
-}
 
-#hosting70 .container .pricing .price ul{
-    margin-top: 50px;
-    border-top:1px solid rgba(219, 36, 36, 0.63) ;
-}
-#hosting70 .container .pricing .price ul li{
-   padding-bottom: 15px;
-}
-#hosting70 .container .pricing .price ul li i{
-    color: #FF4A58;
-}
+  }
+  .pricing-new-wrapper .pricing-price .p-icon i {
+    color:rgba(255, 0, 0, 0.699) !important;
+  }
+  #hosting70 .popular-price {
+      background-color: black !important;
+   color: rgb(240, 238, 238);
+   border: 1px solid rgba(255, 71, 71, 0.664) !important;
+   box-shadow: rgb(206, 68, 68) 0px 5px 15px !important;
+  }
+  #hosting70 .popular-price .h2,
+  #hosting70 .popular-price .pricing-info
+  {
+      color: white !important;
+  }
+  #hosting70 .popular-price .pricing-content strong{
+    color: white !important;
+  }
+  #hosting70 .popular-price .pricing-content i{
+    color: white !important;
+  }
+  /* line 217, src/assets/scss/components/price-section/_price-1.scss */
+.switch-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  /* line 222, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  /* line 230, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch span {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* line 238, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch .switch-icon {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 25px;
+    border: 1px solid rgba(93, 118, 174, 0.15);
+    border-radius: 15px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    margin: 0 15px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* line 251, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch .switch-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 17px;
+    background-color: #e80012;
+    border-radius: 15px;
+    -webkit-transform: translate3d(4px, 3px, 0);
+            transform: translate3d(4px, 3px, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* line 263, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch input {
+    display: none;
+  }
+  
+  /* line 267, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch input:checked + .switch-icon::after {
+    -webkit-transform: translate3d(29px, 3px, 0);
+            transform: translate3d(29px, 3px, 0);
+  }
+  
+  /* line 271, src/assets/scss/components/price-section/_price-1.scss */
+  .form-switch .beforeinput.text-success, .form-switch .afterinput.text-success {
+    color: #e80012 !important;
+  }
+  
+ 
 
     /*==========
    70% discount end
@@ -663,107 +685,56 @@ font-weight: bold;
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: #C60217;
+        color:  black ;
        
   }
-  #hosting60 .container .heading {
-      text-align: center;
-      background-color: white;
-       width: 70%;
-      border-radius: 8px;
-      margin: auto;
-      margin-bottom: 35px;
-
-  }
-  #hosting60 .container .heading h1{
-    font-size: 25px;
-    font-weight: bolder;
-    line-height: 55px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-  }
-
-  #hosting60 .container .pricing .price{
-      color: rgb(0, 0, 0);
-      border-radius: 8px;
-      background-color: white;
-      text-align: center;
-      padding-bottom: 25px;
-      transition: 0.4s;
-      margin-bottom: 20px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  #hosting60 .container .pricing .price:hover{
-      transform: translateY(-10px);
-  }
-  #hosting60 .container .pricing .price h2{
-      font-size: 22px;
-      font-family: var(--ff1);
-      font-weight: normal;
-  }
-  #hosting60 .container .pricing .price h1{
-      font-size: 37px;
-      font-family: var(--ff1);
-      font-weight: bolder;
-      color: #FF4A58;
-      margin-top: 15px;
-  }
-  #hosting60 .container .pricing .price h1 span{
-      font-size: 22px;
-  }
-  #hosting60 .container .pricing .price h3{
-      font-size: 12px;
-      color: rgb(124, 121, 121);
-  }
-  #hosting60 .container .pricing .price h3 span{
-    font-size: 15px;
-    font-family: var(--ff1);
-    font-weight: bolder;
-    color: #FF4A58;
-  }
-
-  #hosting60 .container .pricing .price h4{
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-family: var(--ff1);
-    margin-bottom: 15px;
+  #hosting60 i{
+    color: #000;
 
 }
-  #hosting60 .container .pricing .price h4 span {
-    font-size: 17px;
-    color: #FF4A58;
-    font-weight: bolder;
-    font-family: var(--ff1);
+/* line 716, src/assets/scss/components/price-section/_price-1.scss */
+#hosting60 .pricing-new-wrapper .pricing-price .p-icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 40px;
+  color:rgba(2, 2, 2, 0.699) !important;
+  
 
 }
-
-#hosting60 .container .pricing .price a{
-    cursor: pointer;
-    margin-top: 80px;
-    font-size: 13px;
-    padding: 14px 23px; 
-    background-color:#FF4A58;
-    color: white;
+#hosting60 .pricing-new-wrapper .pricing-price .p-icon i {
+  color:rgba(0, 0, 0, 0.699) !important;
+}
+#hosting60 .popular-price {
+  
+ color: rgb(0, 0, 0);
+ border: 1px solid rgba(0, 0, 0, 0.123) !important;
+ box-shadow: rgba(0, 0, 0, 0.61) 0px 5px 15px !important;
+}
+#hosting60 .popular-price .h2,
+#hosting60 .popular-price .pricing-info
+{
+    color: rgb(0, 0, 0) !important;
+}
+#hosting60 .popular-price .pricing-content p{
+    color: #000;
+}
+#hosting60 .popular-price .pricing-content strong{
+  color: rgb(0, 0, 0) !important;
+}
+#hosting60 .popular-price .pricing-content i{
+  color: rgb(0, 0, 0) !important;
+}
+#hosting60 .btn-outline-brand-01 {
+    border-color: #000000;
+    color: #000000;
     
-    border-radius: 6px;
-    box-shadow: rgba(197, 195, 195, 0.4) 
-    0px 2px 4px, rgba(138, 122, 122, 0.3)
-     0px 7px 13px -3px, rgba(0, 0, 0, 0.2)
-      0px -3px 0px inset;
-}
-
-#hosting60 .container .pricing .price ul{
-    margin-top: 50px;
-    border-top:1px solid rgba(134, 127, 127, 0.63) ;
-}
-#hosting60 .container .pricing .price ul li{
-   padding-bottom: 15px;
-}
-#hosting60 .container .pricing .price ul li i{
-    color: #FF4A58;
-}
-
+  } 
+  /* line 271, src/assets/scss/components/price-section/_price-1.scss */
+  #hosting60 .form-switch .beforeinput.text-success {
+    color: #ffffff !important;
+  }
     /*==========
    60% discount end
   ==============*/
@@ -771,30 +742,6 @@ font-weight: bold;
  /*==========
  komdami Hosting 
   ==============*/
-#komdami-host .container .details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 300px;
-    margin-top: 20%;
-}
-#komdami-host .container .details h1{
-    font-weight: bolder;
-    font-size: 22px;
-}
-#komdami-host .container .details a{
-    background-color:#FF4A58;
-    padding: 14px 10px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-#komdami-host .container .details a:hover{
-transform: translateY(-10px);
-}
 
 
  /*==========
@@ -806,110 +753,7 @@ transform: translateY(-10px);
    /*==========
    50% discount
   ==============*/
-  #hosting50{
-    /* background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important; */
-        padding-top: 60px;
-        padding-bottom: 60px;
-  }
-  #hosting50 .container .heading {
-      text-align: center;
-      background-color: white;
-       width: 70%;
-      border-radius: 8px;
-      margin: auto;
-      margin-bottom: 35px;
 
-  }
-  #hosting50 .container .heading h1{
-    font-size: 25px;
-    font-weight: bolder;
-    line-height: 55px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-  }
-
-  #hosting50 .container .pricing .price{
-      color: rgb(0, 0, 0);
-      border-radius: 8px;
-      background-color: white;
-      text-align: center;
-      padding-bottom: 25px;
-      transition: 0.4s;
-      margin-bottom: 20px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  #hosting50 .container .pricing .price:hover{
-      transform: translateY(-10px);
-  }
-  #hosting50 .container .pricing .price h2{
-      font-size: 22px;
-      font-family: var(--ff1);
-      font-weight: normal;
-  }
-  #hosting50 .container .pricing .price h1{
-      font-size: 37px;
-      font-family: var(--ff1);
-      font-weight: bolder;
-      color: #FF4A58;
-      margin-top: 15px;
-  }
-  #hosting50 .container .pricing .price h1 span{
-      font-size: 22px;
-  }
-  #hosting50 .container .pricing .price h3{
-      font-size: 12px;
-      color: rgb(124, 121, 121);
-  }
-  #hosting50 .container .pricing .price h3 span{
-    font-size: 15px;
-    font-family: var(--ff1);
-    font-weight: bolder;
-    color: #FF4A58;
-  }
-
-  #hosting60 .container .pricing .price h4{
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-family: var(--ff1);
-    margin-bottom: 15px;
-
-}
-  #hosting50 .container .pricing .price h4 span {
-    font-size: 17px;
-    color: #FF4A58;
-    font-weight: bolder;
-    font-family: var(--ff1);
-
-}
-
-#hosting60 .container .pricing .price a{
-    cursor: pointer;
-    margin-top: 80px;
-    font-size: 13px;
-    padding: 14px 23px; 
-    background-color:#FF4A58;
-    color: white;
-    
-    border-radius: 6px;
-    box-shadow: rgba(197, 195, 195, 0.4) 
-    0px 2px 4px, rgba(138, 122, 122, 0.3)
-     0px 7px 13px -3px, rgba(0, 0, 0, 0.2)
-      0px -3px 0px inset;
-}
-
-#hosting50 .container .pricing .price ul{
-    margin-top: 50px;
-    border-top:1px solid rgba(134, 127, 127, 0.63) ;
-}
-#hosting50 .container .pricing .price ul li{
-   padding-bottom: 15px;
-}
-#hosting50 .container .pricing .price ul li i{
-    color: #FF4A58;
-}
 
     /*==========
    50% discount end
@@ -918,141 +762,7 @@ transform: translateY(-10px);
    /*==========
 300% discount
   ==============*/
-  #hosting30{
-    /* background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important; */
-        padding-top: 60px;
-        padding-bottom: 60px;
-  }
-  #hosting30 .container .heading {
-      text-align: center;
-      background-color: white;
-       width: 70%;
-      border-radius: 8px;
-      margin: auto;
-      margin-bottom: 35px;
 
-  }
-  #hosting30 .container .heading h1{
-    font-size: 23px;
-    font-weight: bolder;
-    line-height: 55px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    border-radius: 8px;
-   
-  }
-
-  #hosting30 .container .pricing .price{
-      color: rgb(0, 0, 0);
-      border-radius: 8px;
-      background-color: white;
-      text-align: center;
-      padding-bottom: 25px;
-      transition: 0.4s;
-      margin-bottom: 20px;
-      margin-left: 8px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      
-  }
-  #hosting30 .container .pricing .price:hover{
-   
-  }
-  #hosting50 .container .pricing .price h2{
-      font-size: 20px;
-      font-family: var(--ff1);
-      font-weight: normal;
-  }
-  #hosting30 .container .pricing .price h1{
-      font-size: 35px;
-      font-family: var(--ff1);
-      font-weight: bolder;
-      color: #FF4A58;
-      margin-top: 15px;
-  }
-  #hosting30 .container .pricing .price h1 span{
-      font-size: 22px;
-  }
-  #hosting50 .container .pricing .price h3{
-      font-size: 12px;
-      color: rgb(124, 121, 121);
-  }
-  #hosting50 .container .pricing .price h3 span{
-    font-size: 15px;
-    font-family: var(--ff1);
-    font-weight: bolder;
-    color: #FF4A58;
-  }
-
-  #hosting30 .container .pricing .price h4{
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-family: var(--ff1);
-    margin-bottom: 15px;
-
-}
-  #hosting50 .container .pricing .price h4 span {
-    font-size: 17px;
-    color: #FF4A58;
-    font-weight: bolder;
-    font-family: var(--ff1);
-
-}
-
-#hosting30 .container .pricing .price a{
-    cursor: pointer;
-    margin-top: 80px;
-    font-size: 13px;
-    padding: 14px 23px; 
-    background-color:#FF4A58;
-    color: white;
-    
-    border-radius: 6px;
-    box-shadow: rgba(197, 195, 195, 0.4) 
-    0px 2px 4px, rgba(138, 122, 122, 0.3)
-     0px 7px 13px -3px, rgba(0, 0, 0, 0.2)
-      0px -3px 0px inset;
-}
-
-#hosting30 .container .pricing .price ul{
-    margin-top: 50px;
-    border-top:1px solid rgba(134, 127, 127, 0.63) ;
-}
-#hosting30 .container .pricing .price ul li{
-   padding-bottom: 15px;
-}
-#hosting30 .container .pricing .price ul li i{
-    color: #FF4A58;
-}
-#hosting30 .container .pricing .banner-slider{
-
-}
-#hosting30 .container .pricing .banner-slider .next-arrow {
-   position: absolute;
-   width: 50px;
-   bottom: -30px;
-   left: 39%;
-    z-index: 1111111;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 255, 255);
-    font-size: 25px;
-    padding: 4px 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-#hosting30 .container .pricing .banner-slider .previous-arrow {
-    position: absolute;
-    bottom: -30px;
- width: 50px;
-    right: 35%;
-    z-index: 1111111;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 255, 255);
-    font-size: 25px;
-    padding: 4px 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
     /*==========
    50% discount end
   ==============*/
@@ -1061,135 +771,22 @@ transform: translateY(-10px);
  /*==========
  Service
   ==============*/
-  #service{
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
-        margin-top: 50px;
-        margin-bottom: 50px;
-  }
-#service .container .details {
-    
-}
-#service .container .details h2{
-    font-weight: bolder;
-    margin-top: 20px;
-    color: ivory;
-}
-#service .container .details h3{
-    margin-top: 58px;
-    font-size: 15px;
-    margin-bottom: 20px;
-    color: ivory;
-}
-#service .container .details p{
-    font-size: 18px;
-    line-height: 25px;
-    color: ivory;
-}
+
  /*==========
  Service
   ==============*/
- /*==========
- pdf-book
-  ==============*/
-  #pdf-book .container .img img{
-
-  }
-  #pdf-book .container .details h1{
-    font-size: 18px;
-    font-weight: normal;
-    font-family: initial;
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
-  #pdf-book .container .details a{
-    background-color:#FF4A58;
-    padding: 14px 10px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  #pdf-book .container .details a:hover{
-    background: linear-gradient(
-        75deg, #2b2dbd, #e80012) !important;
-     
-  }
- /*==========
- pdf-book
-  ==============*/
- /*==========
-Review
-  ==============*/
-/* #review .container .slider .banner-item{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 15px;
-    margin-left: 5px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.05)
-     0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-      border-radius: 7px;
-}
-#review .container .slider .banner-item img{
-    margin: auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-top: 15px;
-}
-#review .container .slider .banner-item h3{
-    color:#FF4A58;
-    font-size: 16px;
-    font-weight: bold;
-
-}
-#review .container .slider .banner-item p{
-    color:#3021228f;
-    font-size: 14px;
-    font-family: var(--ff1);
-    padding: 0 10px;
-}
-#review .container .slider .banner-item ul {
-    display: flex;
-    margin-left: 0;
-    padding-left: 0;
-    justify-content: center;
-    color: var(--brand);
- 
-
-}
-#review .container .slider .next-arrow {
-    position: absolute;
-    bottom: -30px;
-    left: 57%;
-     z-index: 1111111;
-     color: rgb(0, 0, 0);
-     border: 1px solid rgb(0, 0, 0);
-     font-size: 25px;
-     padding: 4px 10px;
-     transition: 0.3s;
-     cursor: pointer;
- }
- #review .container .slider .previous-arrow {
-     position: absolute;
-     bottom: -30px;
-    
-     right: 56%;
-     z-index: 1111111;
-     color: rgb(0, 0, 0);
-     border: 1px solid rgb(0, 0, 0);
-     font-size: 25px;
-     padding: 4px 10px;
-     transition: 0.3s;
-     cursor: pointer;
- } */
 
   /*==========
 Review
   ==============*/
-  .review-section{
+  /* line 6, src/assets/scss/vendors/owl.carousel.min.css */
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+  }
+  /* .review-section{
       margin-bottom: 100px;
   }
 .review-section h2{
@@ -1258,7 +855,7 @@ Review
      padding: 4px 10px;
      transition: 0.3s;
      cursor: pointer;
- }
+ } */
   /*==========
 Review
   ==============*/
